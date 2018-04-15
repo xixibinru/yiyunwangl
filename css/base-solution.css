@@ -1,0 +1,20 @@
+body {
+    height: 3000px;
+}
+
+.header {
+    height: 50px;
+}
+
+.header .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .85);
+}
+
+.repast img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}

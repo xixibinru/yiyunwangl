@@ -1,0 +1,454 @@
+#header {
+    padding-top: 36px;
+    height: 564px;
+    background: url(../images/banner.jpg) no-repeat center center;
+}
+
+/*
+头部区域  logo+导航栏 + 描述
+*/
+/*.fixed 用于js*/
+.fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#header .p1 {
+    padding-top: 156px;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+#header .p2 {
+    padding-top: 34px;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+#header .move {
+    margin-top: 53px;
+    width: 220px;
+    height: 53px;
+    background: #4cc3ff url(../images/Move.png) no-repeat 54px 7px;
+    cursor: pointer;
+    color: #000;
+}
+
+/*
+公司简介
+*/
+#company {
+    height: 495px;
+}
+
+#company .company-introduction {
+    float: left;
+    padding-top: 99px;
+    width: 650px;
+    height: 397px;
+    background: url(../images/YiYun.png) no-repeat right bottom 66px;
+}
+
+#company .company-introduction > h3 {
+    width: 134px;
+    height: 74px;
+    line-height: 74px;
+    color: #000;
+    font-size: 20px;
+    background-color: #4cc3ff;
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+#company .company-introduction > p {
+    font-size: 16px;
+    color: #b2b2b2;
+    line-height: 24px;
+    width: 564px;
+    text-indent: 2em;
+}
+
+#company .company-image {
+    width: 550px;
+    padding-top: 69px;
+    float: right;
+    text-align: right;
+}
+
+/*
+解决方案 轮播图
+*/
+#FAQ {
+    height: 500px;
+    background-color: #fff7e3;
+}
+
+#FAQ .solution {
+    position: relative;
+}
+
+#FAQ .solution::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '解决方案';
+    width: 134px;
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    background-color: #4cc3ff;
+}
+
+#FAQ .solution > h3 {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    line-height: 100%;
+}
+
+#FAQ .solution > p {
+    padding-top: 21px;
+    font-size: 16px;
+    color: #808080;
+    line-height: 100%;
+    text-align: center;
+}
+
+#FAQ .solution .slider {
+    position: relative;
+    padding-top: 54px;
+}
+
+#FAQ .solution .slider .go-left,
+#FAQ .solution .slider .go-right {
+    position: absolute;
+    top: 146px;
+    width: 62px;
+    height: 78px;
+    cursor: pointer;
+}
+
+#FAQ .solution .slider .go-left {
+    left: 0;
+    background: url(../images/go_left.png);
+}
+
+#FAQ .solution .slider .go-right {
+    right: 0;
+    background: url(../images/go_right.png);
+}
+
+#FAQ .slider > .show {
+    position: absolute;
+    left: 194px;
+    right: 194px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+#FAQ .slider > .show > ul {
+    width: 200%;
+    height: 260px;
+}
+
+#FAQ .show > ul > li {
+    position: absolute;
+    width: 198px;
+    height: 231px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding-top: 27px;
+    transition: transform 0.2s ease-in 0.2s;
+}
+
+#FAQ .show > ul > li:hover {
+    background-color: #000;
+    transform: scale(1.015);
+}
+
+#FAQ .show > ul > li + li {
+    margin-left: 204px;
+}
+
+#FAQ .show li a {
+    display: block;
+}
+
+#FAQ .show li i {
+    display: block;
+    width: 60px;
+    height: 54px;
+    margin: 0 auto;
+}
+
+#FAQ .show li:hover i {
+    background-position-y: 60px;
+}
+
+#FAQ .show li h3 {
+    margin-top: 22px;
+    text-align: center;
+}
+
+#FAQ .show li strong {
+    font-size: 20px;
+    color: #000;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+#FAQ .show > ul > li:hover strong {
+    color: #fff;
+}
+
+#FAQ .show li p {
+    color: #b2b2b2;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 100%;
+}
+
+#FAQ .show p::after {
+    display: block;
+    margin: 30px auto 0 auto;
+    content: "转";
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #4cc3ff;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#FAQ .show a:hover p::after {
+    content: "进";
+}
+
+/*公司特色*/
+#feature {
+    height: 500px;
+    background-color: #627dc4;
+    background-image: linear-gradient(to right, #627dc4, #40444d);
+}
+
+#feature .inner-c {
+    padding-top: 64px;
+    position: relative;
+}
+
+#feature .inner-c::before,
+#feature .inner-c::after {
+    position: absolute;
+    left: 0;
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#feature .inner-c::before {
+    top: 0;
+    content: '品质';
+    background-color: #4cc3ff;
+}
+
+#feature .inner-c::after {
+    top: 60px;
+    content: '保障';
+    background-color: #2ab8ff;
+}
+
+#feature .feature-intro {
+    padding-left: 188px;
+    float: left;
+    width: 647px;
+}
+
+#feature .feature-intro .feature-intro-desc p {
+    font-size: 24px;
+    line-height: 100%;
+}
+
+#feature .feature-intro .feature-intro-desc .feature-intro-desc-2 {
+    padding-top: 19px;
+    padding-bottom: 44px;
+}
+
+#feature .feature-intro .feature-intro-text p {
+    font-size: 15px;
+    line-height: 100%;
+}
+
+#feature .feature-intro .feature-intro-text p + p {
+    padding-top: 15px;
+}
+
+#feature .feature-intro ul {
+    margin-top: 52px;
+    font-size: 0;
+    color: #000;
+}
+
+#feature .feature-intro li {
+    display: inline-block;
+    width: 137px;
+    height: 92px;
+    padding: 28px 0 0 23px;
+    font-size: 24px;
+    line-height: 100%;
+    background: #4cc3ff url(../images/iOS.png) no-repeat right 15px bottom 16px;
+}
+
+#feature .feature-intro li + li {
+    margin-left: 20px;
+}
+
+#feature .feature-intro .Android {
+    background-image: url(../images/Android.png);
+}
+
+#feature .feature-intro .PC {
+    background-image: url(../images/PC.png);
+}
+
+#feature .feature-services {
+    width: 365px;
+    float: right;
+}
+
+#feature .feature-services ul li {
+    float: left;
+    width: 134px;
+    height: 79px;
+    margin: 0 21px 21px 0;
+    background: #4cc3ff url(../images/IE.png) no-repeat center center;
+}
+
+#feature .feature-services ul .fireFox {
+    background-image: url(../images/firefox.png);
+}
+
+#feature .feature-services ul .chrome {
+    background-image: url(../images/chrome.png);
+}
+
+#feature .feature-services ul .iphone {
+    background-image: url(../images/iphone.png);
+}
+
+#feature .feature-services .feature-services-text {
+    margin-top: 80px;
+}
+
+#feature .feature-services p {
+    font-size: 18px;
+    line-height: 100%;
+
+}
+
+#feature .feature-services p + p {
+    padding-top: 13px;
+}
+
+/*
+联系方式
+*/
+#concat {
+    height: 500px;
+    background-color: #fff;
+}
+
+#concat .concat-phoneNumber {
+    float: left;
+    width: 557px;
+    padding-top: 162px;
+}
+
+#concat .concat-phoneNumber img {
+    display: block;
+    padding-left: 86px;
+}
+
+#concat .concat-phoneNumber .wish_CN {
+    position: relative;
+    margin-top: 88px;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000;
+    padding-left: 84px;
+}
+
+#concat .concat-phoneNumber .wish_CN::before,
+#concat .concat-phoneNumber .wish_CN::after {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #4cc3ff;
+    border-radius: 50%;
+    text-align: center;
+    top: -12px;
+}
+
+#concat .concat-phoneNumber .wish_CN::before {
+    content: '千';
+    left: 149px;
+}
+
+#concat .concat-phoneNumber .wish_CN::after {
+    content: '祝';
+    right: 271px;
+}
+
+#concat .concat-phoneNumber .wish_EN {
+    margin-top: 28px;
+    font-size: 22px;
+    color: #999;
+    padding-left: 20px;
+}
+
+#concat .concat-other {
+    width: 323px;
+    float: left;
+    padding-top: 135px;
+
+    color: #000;
+    font-size: 16px;
+}
+
+#concat .concat-other > p {
+    line-height: 48px;
+}
+
+#concat .map {
+    overflow: hidden;
+    margin-top: 99px;
+    float: left;
+    width: 312px;
+    height: 312px;
+    border: 4px solid #4cc3ff;
+    /*background-image: url(../images/map.jpg);*/
+    box-shadow: 1px 1px 40px #d0ecfa;
+}
+
+#footer {
+    height: 80px;
+    background-color: #24282f;
+}
+
+#footer p {
+    line-height: 80px;
+    text-align: center;
+    font-size: 16px;
+}
+
